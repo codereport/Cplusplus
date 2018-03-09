@@ -20,7 +20,7 @@
 template<typename T>
 std::string get_iterator_type (T it) {
 
-	if      (typeid (std::iterator_traits<T>::iterator_category) == typeid (std::input_iterator_tag))		  return "Input";
+	if      (typeid (std::iterator_traits<T>::iterator_category) == typeid (std::input_iterator_tag))	  return "Input";
 	else if (typeid (std::iterator_traits<T>::iterator_category) == typeid (std::output_iterator_tag))        return "Output";
 	else if (typeid (std::iterator_traits<T>::iterator_category) == typeid (std::forward_iterator_tag))       return "Forward";
 	else if (typeid (std::iterator_traits<T>::iterator_category) == typeid (std::bidirectional_iterator_tag)) return "Bidirectional";
